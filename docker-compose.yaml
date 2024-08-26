@@ -1,0 +1,9 @@
+services:
+  node-app:
+    restart: on-failure
+    # build: look in current dir and use Dockerfile
+    build: .
+    image: osecina
+    ports:
+      - "8080:8080"
+    
